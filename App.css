@@ -229,3 +229,55 @@ h1 {
     margin: 1rem;
   }
 }
+
+.movie-detail {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #f9d3b4;
+}
+
+.back-button {
+  padding: 0.5rem 1rem;
+  background: #1f2123;
+  color: #f9d3b4;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.detail-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+
+.poster img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.info h1 {
+  margin-bottom: 1rem;
+}
+
+.plot {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.metadata p {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .detail-content {
+      grid-template-columns: 1fr;
+  }
+  
+  .poster {
+      max-width: 300px;
+      margin: 0 auto;
+  }
+}
